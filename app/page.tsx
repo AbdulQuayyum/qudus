@@ -1,16 +1,5 @@
-import {
-  About,
-  BackToTop,
-  Contact,
-  Education,
-  Footer,
-  Hero,
-  Navbar,
-  Projects,
-  Qualification,
-  Services,
-  Skills,
-} from "../components/Index"
+import { Analytics } from '@vercel/analytics/react';
+import { About, BackToTop, Contact, Education, Footer, Hero, Navbar, Projects, Qualification, Services, Skills } from "../components/Index"
 
 const App = () => {
   return (
@@ -31,6 +20,7 @@ const App = () => {
       <footer>
         <Footer />
         <BackToTop />
+        <Analytics />
       </footer>
     </div>
   )
