@@ -164,7 +164,7 @@ export default function Projects() {
           </motion.p>
         </motion.div>
 
-        <motion.div className="grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3" initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.8, delay: 0.3 }} >
+        <motion.div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.8, delay: 0.3 }} >
           {projects.map((project, index) => (
             <motion.div key={index} initial={{ opacity: 0, y: 80, scale: 0.9, rotateY: -15 }} animate={isInView ? { opacity: 1, y: 0, scale: 1, rotateY: 0 } : { opacity: 0, y: 80, scale: 0.9, rotateY: -15 }} transition={{ duration: 0.8, delay: index * 0.2 }} whileHover={{ y: -20, scale: 1.03, rotateY: 5, rotateX: 5, transition: { duration: 0.3 } }} className="relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000" style={{ transformStyle: "preserve-3d" }} >
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
