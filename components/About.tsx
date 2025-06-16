@@ -48,7 +48,7 @@ const skills = [
         </motion.div>
         <motion.div className="flex flex-col items-center justify-center w-full gap-12" initial={{ opacity: 0 }} animate={isVisible ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.8, delay: 0.3 }} >
           <motion.div className="flex flex-col items-center justify-center max-w-4xl" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
-            <div className=" p-8 md:p-10 ">
+            <div className=" px-0 md:px-10 py-8 md:py-10 ">
               <p className="text-lg leading-relaxed text-[#121212] text-center mb-8">
                 I am a <span className="text-gradient font-semibold">Google Analytics & Ads Certified</span> Digital
                 Marketing Specialist with over 2 years of experience in strategy and execution across SEM, Display, Paid

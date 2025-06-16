@@ -9,7 +9,7 @@ const Services = () => {
       title: "Digital Marketing Strategy",
       description:
         "Comprehensive digital marketing strategies including SEM, Display, Paid Social, and performance marketing campaigns.",
-      features: ["Google Ads Management", "Meta Ads Campaigns", "LinkedIn Advertising", "Campaign Analytics"],
+      features: ["Media Planning", "Budget Optimization", "Audience Targeting", "Performance Tracking"],
     },
     {
       icon: <Camera className="w-8 h-8" />,
@@ -30,7 +30,7 @@ const Services = () => {
       title: "Media Buying & Strategy",
       description:
         "Strategic media buying across platforms with data-driven optimization for maximum ROI and performance.",
-      features: ["Media Planning", "Budget Optimization", "Audience Targeting", "Performance Tracking"],
+      features: ["Google Ads Management", "Meta Ads Campaigns", "LinkedIn Advertising", "Campaign Analytics"],
     },
     {
       icon: <Globe className="w-8 h-8" />,

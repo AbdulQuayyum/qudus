@@ -120,7 +120,7 @@ const Qualification = () => {
         <div className="flex justify-center w-full">
           <div className="w-full">
             {data.map((item, index) => (
-              <motion.div key={item.id} className="py-6 border-b border-gray-200 rounded-xl px-4 transition-all duration-300" onMouseEnter={() => setHover(index)} onMouseLeave={() => setHover(null)} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: index * 0.1 }} viewport={{ once: true }}>
+              <motion.div key={item.id} className="py-6 border-b border-gray-200 rounded-xl px-0 md:px-4 transition-all duration-300" onMouseEnter={() => setHover(index)} onMouseLeave={() => setHover(null)} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: index * 0.1 }} viewport={{ once: true }}>
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-3">
                     <span className="px-3 py-1 text-sm font-bold rounded-full text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A]">
