@@ -147,95 +147,238 @@ export default function Projects() {
   ]
 
   return (
-    <section ref={sectionRef} id="projects" className="relative w-full px-4 py-20 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-r from-[#CCD5AE]/20 to-[#9CAA7A]/20 rounded-full blur-3xl" animate={{ x: [0, 50, -30, 0], y: [0, -30, 40, 0], scale: [1, 1.1, 0.9, 1] }} transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }} />
-        <motion.div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-l from-[#E8EDD7]/30 to-[#CCD5AE]/20 rounded-full blur-3xl" animate={{ x: [0, -40, 60, 0], y: [0, 50, -20, 0], scale: [1, 0.8, 1.2, 1] }} transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }} />
-      </div>
+<section ref={sectionRef} id="projects" className="relative w-full px-4 py-20 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <motion.div 
+      className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-r from-[#CCD5AE]/20 to-[#9CAA7A]/20 rounded-full blur-3xl" 
+      animate={{ x: [0, 50, -30, 0], y: [0, -30, 40, 0], scale: [1, 1.1, 0.9, 1] }} 
+      transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }} 
+    />
+    <motion.div 
+      className="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-l from-[#E8EDD7]/30 to-[#CCD5AE]/20 rounded-full blur-3xl" 
+      animate={{ x: [0, -40, 60, 0], y: [0, 50, -20, 0], scale: [1, 0.8, 1.2, 1] }} 
+      transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }} 
+    />
+  </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center w-full mx-auto max-w-7xl">
-        <motion.div className="flex flex-col items-center justify-center w-full gap-y-3 mb-12" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-          <motion.span className="text-xl font-bold text-center md:text-3xl bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] bg-clip-text text-transparent" initial={{ opacity: 0, scale: 0.5, rotateX: -90 }} whileInView={{ opacity: 1, scale: 1, rotateX: 0 }} transition={{ duration: 1.2, ease: "backOut" }} viewport={{ once: true }} >
-            What has Qudus worked on?
-          </motion.span>
-          <motion.div className="w-24 h-1 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" initial={{ width: 0 }} whileInView={{ width: 96 }} transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }} />
-          <motion.p className="max-w-3xl pt-3 mx-auto text-xl text-center text-[#121212]" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.8 }} viewport={{ once: true }}>
-            Showcasing successful digital marketing campaigns and creative projects that delivered measurable results
-          </motion.p>
-        </motion.div>
+  <div className="relative z-10 flex flex-col items-center justify-center w-full mx-auto max-w-7xl">
+    <motion.div 
+      className="flex flex-col items-center justify-center w-full gap-y-3 mb-8 sm:mb-12" 
+      initial={{ opacity: 0, y: -50 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 1 }} 
+      viewport={{ once: true }}
+    >
+      <motion.span 
+        className="text-lg sm:text-xl md:text-3xl font-bold text-center bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] bg-clip-text text-transparent px-4" 
+        initial={{ opacity: 0, scale: 0.5, rotateX: -90 }} 
+        whileInView={{ opacity: 1, scale: 1, rotateX: 0 }} 
+        transition={{ duration: 1.2, ease: "backOut" }} 
+        viewport={{ once: true }}
+      >
+        What has Qudus worked on?
+      </motion.span>
+      <motion.div 
+        className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" 
+        initial={{ width: 0 }} 
+        whileInView={{ width: "auto" }} 
+        transition={{ duration: 1, delay: 0.5 }} 
+        viewport={{ once: true }} 
+      />
+      <motion.p 
+        className="max-w-3xl pt-3 mx-auto text-base sm:text-lg md:text-xl text-center text-[#121212] px-4" 
+        initial={{ opacity: 0, y: 20 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ delay: 0.5, duration: 0.8 }} 
+        viewport={{ once: true }}
+      >
+        Showcasing successful digital marketing campaigns and creative projects that delivered measurable results
+      </motion.p>
+    </motion.div>
 
-        <motion.div className="grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3" initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.8, delay: 0.3 }} >
-          {projects.map((project, index) => (
-            <motion.div key={index} initial={{ opacity: 0, y: 80, scale: 0.9, rotateY: -15 }} animate={isInView ? { opacity: 1, y: 0, scale: 1, rotateY: 0 } : { opacity: 0, y: 80, scale: 0.9, rotateY: -15 }} transition={{ duration: 0.8, delay: index * 0.2 }} whileHover={{ y: -20, scale: 1.03, rotateY: 5, rotateX: 5, transition: { duration: 0.3 } }} className="relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000" style={{ transformStyle: "preserve-3d" }} >
-              <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {[...Array(6)].map((_, i) => (
-                  <motion.div key={i} className="absolute w-2 h-2 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%`, }} animate={{ y: [0, -20, 0], x: [0, Math.random() * 20 - 10, 0], opacity: [0, 1, 0], scale: [0, 1, 0], }} transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 2, ease: "easeInOut" }} />
-                ))}
-              </div>
+    {/* Fixed grid layout - now shows 1 column on mobile, 2 on tablet, 3 on desktop */}
+    <motion.div 
+      className="grid w-full gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" 
+      initial={{ opacity: 0 }} 
+      animate={isInView ? { opacity: 1 } : { opacity: 0 }} 
+      transition={{ duration: 0.8, delay: 0.3 }}
+    >
+      {projects.map((project, index) => (
+        <motion.div 
+          key={index} 
+          initial={{ opacity: 0, y: 50, scale: 0.95 }} 
+          animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.95 }} 
+          transition={{ duration: 0.6, delay: index * 0.1 }} 
+          whileHover={{ 
+            y: -10, 
+            scale: 1.02, 
+            transition: { duration: 0.3 } 
+          }} 
+          className="relative overflow-hidden transition-all duration-300 bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl group"
+        >
+          {/* Simplified floating particles for better mobile performance */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[...Array(3)].map((_, i) => (
+              <motion.div 
+                key={i} 
+                className="absolute w-1 h-1 sm:w-2 sm:h-2 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" 
+                style={{ 
+                  left: `${Math.random() * 100}%`, 
+                  top: `${Math.random() * 100}%` 
+                }} 
+                animate={{ 
+                  y: [0, -10, 0], 
+                  opacity: [0, 1, 0], 
+                  scale: [0, 1, 0] 
+                }} 
+                transition={{ 
+                  duration: 3, 
+                  repeat: Infinity, 
+                  delay: Math.random() * 2, 
+                  ease: "easeInOut" 
+                }} 
+              />
+            ))}
+          </div>
 
-              <div className="relative overflow-hidden">
-                <motion.img src={project.image} alt={project.title} className="object-cover w-full h-48 md:h-72" whileHover={{ scale: 1.15, rotate: 1, transition: { duration: 0.6 } }} transition={{ duration: 0.6 }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12" initial={{ x: "-100%" }} whileHover={{ x: "200%" }} transition={{ duration: 0.8, ease: "easeOut" }} />
+          <div className="relative overflow-hidden">
+            {/* Responsive image height */}
+            <motion.img 
+              src={project.image} 
+              alt={project.title} 
+              className="object-cover w-full h-40 sm:h-48 md:h-56 lg:h-64" 
+              whileHover={{ scale: 1.05 }} 
+              transition={{ duration: 0.3 }} 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <motion.div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-white/90 text-[#9CAA7A] backdrop-blur-sm" initial={{ x: -50, opacity: 0, scale: 0 }} animate={{ x: 0, opacity: 1, scale: 1 }} transition={{ delay: index * 0.1 + 0.5, type: "spring", stiffness: 200, damping: 10 }} whileHover={{ scale: 1.1, rotate: 5 }} >
-                  <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}>
-                    {project.icon}
-                  </motion.div>
-                  {project.category}
-                </motion.div>
-                <motion.button className="absolute bottom-4 right-4 w-12 h-12 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-lg" initial={{ scale: 0, rotate: -180 }} whileHover={{ scale: 1, rotate: 0 }} transition={{ duration: 0.3, ease: "backOut" }} whileTap={{ scale: 0.9 }} >
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </motion.button>
-              </div>
-
-              <div className="relative p-6">
-                <motion.h3 className="mb-3 text-xl font-bold transition-colors duration-300 text-[#121212] group-hover:text-[#9CAA7A]" initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: index * 0.1 + 0.6 }} whileHover={{ x: 5 }}>
-                  {project.title}
-                </motion.h3>
-
-                <motion.p className="mb-4 leading-relaxed text-[#121212]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: index * 0.1 + 0.7 }}>
-                  {project.description}
-                </motion.p>
-
-                <motion.div className="grid grid-cols-3 gap-4 p-4 mb-4 rounded-xl bg-gradient-to-r from-[#E8EDD7] to-[#D9E0C4] text-[#9CAA7A] hover:from-[#CCD5AE] hover:to-[#B8C599]" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: index * 0.1 + 0.8 }} whileHover={{ scale: 1.02 }}>
-                  {project.metrics.map((metric, metricIndex) => (
-                    <motion.div key={metricIndex} className="text-center" initial={{ scale: 0, rotateY: -90 }} animate={{ scale: 1, rotateY: 0 }} transition={{ delay: index * 0.1 + 0.9 + metricIndex * 0.1, type: "spring", stiffness: 200 }} whileHover={{ scale: 1.15, y: -5, transition: { duration: 0.2 } }} >
-                      <motion.div className="text-lg font-bold text-[#9CAA7A]" animate={{ scale: [1, 1.1, 1] }} transition={{ duration: 2, repeat: Infinity, delay: metricIndex * 0.3 }} >
-                        {metric.value}
-                      </motion.div>
-                      <div className="text-xs text-[#121212]">{metric.label}</div>
-                    </motion.div>
-                  ))}
-                </motion.div>
-
-                <motion.div className="flex flex-wrap gap-2 mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: index * 0.1 + 1 }}>
-                  {project.tags.map((tag, tagIndex) => (
-                    <motion.span key={tagIndex} className="px-2 py-1 text-xs font-medium bg-gradient-to-r text-[#9CAA7A] from-[#E8EDD7] to-[#D9E0C4] hover:from-[#CCD5AE] hover:to-[#B8C599] rounded-full cursor-pointer" initial={{ x: -20, opacity: 0, scale: 0 }} animate={{ x: 0, opacity: 1, scale: 1 }} transition={{ delay: index * 0.1 + 1.1 + tagIndex * 0.05, type: "spring", stiffness: 300 }} whileHover={{ scale: 1.1, y: -2, rotate: 2, backgroundColor: "#dbeafe", transition: { duration: 0.2 } }} whileTap={{ scale: 0.95 }} >
-                      {tag}
-                    </motion.span>
-                  ))}
-                </motion.div>
-                <motion.div className="w-full h-1 bg-gradient-to-r from-[#E8EDD7] to-[#D9E0C4] rounded-full overflow-hidden" initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: index * 0.1 + 1.5, duration: 1 }} >
-                  <motion.div className="h-full bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A]" initial={{ x: "-100%" }} animate={{ x: 0 }} transition={{ delay: index * 0.1 + 1.8, duration: 1.5, ease: "easeOut" }} />
-                </motion.div>
-              </div>
-              <motion.div className="absolute top-0 right-0 w-0 h-0 border-l-[30px] border-l-transparent border-t-[30px] border-t-[#CCD5AE]/20" initial={{ scale: 0, rotate: -90 }} animate={{ scale: 1, rotate: 0 }} transition={{ delay: index * 0.1 + 2, duration: 0.5 }} />
+            {/* Category badge */}
+            <motion.div 
+              className="absolute top-2 sm:top-4 left-2 sm:left-4 flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 text-xs sm:text-sm font-medium rounded-full bg-white/90 text-[#9CAA7A] backdrop-blur-sm" 
+              initial={{ x: -30, opacity: 0 }} 
+              animate={{ x: 0, opacity: 1 }} 
+              transition={{ delay: index * 0.1 + 0.3 }}
+            >
+              <span className="text-xs sm:text-sm">{project.icon}</span>
+              <span className="hidden sm:inline">{project.category}</span>
             </motion.div>
-          ))}
-        </motion.div>
-        <motion.div className="mt-16 text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} viewport={{ once: true }}> 
-          <motion.button className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
-            <motion.div className="absolute inset-0 bg-gradient-to-r from-[#9CAA7A] to-[#CCD5AE] opacity-0 group-hover:opacity-100 transition-opacity duration-300" initial={false}/>
-            <span className="relative z-10">View All Projects</span>
-            <motion.div className="absolute right-4 top-1/2 transform -translate-y-1/2" animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-              →
+
+            {/* External link button */}
+            <motion.button 
+              className="absolute bottom-2 sm:bottom-4 right-2 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-lg" 
+              whileHover={{ scale: 1.1 }} 
+              whileTap={{ scale: 0.9 }}
+            >
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </motion.button>
+          </div>
+
+          <div className="relative p-4 sm:p-6">
+            {/* Project title */}
+            <motion.h3 
+              className="mb-2 sm:mb-3 text-lg sm:text-xl font-bold text-[#121212] group-hover:text-[#9CAA7A] transition-colors duration-300" 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ delay: index * 0.1 + 0.4 }}
+            >
+              {project.title}
+            </motion.h3>
+
+            {/* Project description */}
+            <motion.p 
+              className="mb-3 sm:mb-4 text-sm sm:text-base leading-relaxed text-[#121212]" 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ delay: index * 0.1 + 0.5 }}
+            >
+              {project.description}
+            </motion.p>
+
+            {/* Metrics - responsive grid */}
+            <motion.div 
+              className="grid grid-cols-3 gap-2 sm:gap-4 p-3 sm:p-4 mb-3 sm:mb-4 rounded-lg sm:rounded-xl bg-gradient-to-r from-[#E8EDD7] to-[#D9E0C4] text-[#9CAA7A]" 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ delay: index * 0.1 + 0.6 }}
+            >
+              {project.metrics.map((metric, metricIndex) => (
+                <div key={metricIndex} className="text-center">
+                  <div className="text-sm sm:text-base md:text-lg font-bold text-[#9CAA7A]">
+                    {metric.value}
+                  </div>
+                  <div className="text-xs text-[#121212] leading-tight">{metric.label}</div>
+                </div>
+              ))}
             </motion.div>
-          </motion.button>
+
+            {/* Tags - responsive layout */}
+            <motion.div 
+              className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4" 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ delay: index * 0.1 + 0.7 }}
+            >
+              {project.tags.map((tag, tagIndex) => (
+                <span 
+                  key={tagIndex} 
+                  className="px-2 py-1 text-xs font-medium bg-gradient-to-r text-[#9CAA7A] from-[#E8EDD7] to-[#D9E0C4] rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </motion.div>
+
+            {/* Progress bar */}
+            <motion.div 
+              className="w-full h-1 bg-gradient-to-r from-[#E8EDD7] to-[#D9E0C4] rounded-full overflow-hidden" 
+              initial={{ scaleX: 0 }} 
+              animate={{ scaleX: 1 }} 
+              transition={{ delay: index * 0.1 + 0.8, duration: 0.8 }}
+            >
+              <motion.div 
+                className="h-full bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A]" 
+                initial={{ x: "-100%" }} 
+                animate={{ x: 0 }} 
+                transition={{ delay: index * 0.1 + 1, duration: 1, ease: "easeOut" }} 
+              />
+            </motion.div>
+          </div>
+
+          {/* Corner decoration */}
+          <div className="absolute top-0 right-0 w-0 h-0 border-l-[20px] sm:border-l-[30px] border-l-transparent border-t-[20px] sm:border-t-[30px] border-t-[#CCD5AE]/20" />
         </motion.div>
-      </div>
-    </section>
+      ))}
+    </motion.div>
+
+    {/* View All Projects button */}
+    <motion.div 
+      className="mt-12 sm:mt-16 text-center" 
+      initial={{ opacity: 0, y: 30 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, delay: 0.3 }} 
+      viewport={{ once: true }}
+    > 
+      <motion.button 
+        className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group" 
+        whileHover={{ scale: 1.05, y: -2 }} 
+        whileTap={{ scale: 0.98 }}
+      >
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-r from-[#9CAA7A] to-[#CCD5AE] opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+        />
+        <span className="relative z-10">View All Projects</span>
+        <motion.div 
+          className="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2" 
+          animate={{ x: [0, 5, 0] }} 
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          →
+        </motion.div>
+      </motion.button>
+    </motion.div>
+  </div>
+</section>
   )
 }
