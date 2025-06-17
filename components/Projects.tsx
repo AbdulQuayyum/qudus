@@ -11,8 +11,6 @@ export default function Projects() {
   const projects = [
     {
       title: "DealMakers BDC Brand Bible",
-      description:
-        "Led the full development of DealMakers BDC’s brand architecture from scratch. Defined brand purpose, mission, vision, and positioning as Nigeria’s most trusted FX partner. Crafted customer archetypes (Hero & Caregiver), tone of voice, and content frameworks. Created the 'Abdul the Corporate Mallam' mascot to humanize complex FX services and built a multi-platform content strategy covering product explainers, street interviews, meme content, and educational posts across Instagram, Twitter, TikTok, YouTube, and LinkedIn. Delivered complete brand bible, content guidelines, and execution templates for internal teams.",
       category: "Brand Strategy & Content Development",
       metrics: [
         { label: "Brand Archetypes", value: "2" },
@@ -21,13 +19,11 @@ export default function Projects() {
       ],
       tags: ["Brand Strategy", "Messaging Framework", "Mascot Development", "Content Guidelines", "Financial Services", "FX Industry", "Creative Direction"],
       image: "/bdc.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/1sWzbEn-7XRP6oIMP6ZtdrftvLSuXUucXvkyCNi1C2Z0/edit",
       icon: <Globe className="w-6 h-6" />
     },
     {
       title: "Farmfresh Yoghurt Content Strategy",
-      description:
-        "Led the development of a comprehensive content strategy for Farmfresh Yoghurt, targeting five distinct consumer segments including health enthusiasts, students, and working adults. Created the 'Farmfresh For Life' campaign, structured around four original content pillars—brand heritage, lifestyle, product versatility, and flavor appeal. Outlined a dual-channel activation plan (online/offline), proposed influencer partnerships, and recommended a wellness-driven landing page for sustained engagement.",
       category: "Content Strategy",
       metrics: [
         { label: "Target Groups", value: "5" },
@@ -36,13 +32,11 @@ export default function Projects() {
       ],
       tags: ["Content Strategy", "Wellness Marketing", "Digital Engagement", "Consumer Segmentation", "Campaign Ideation"],
       image: "farmfresh-content.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/15QpFTmBT8sagmdxwv1dUs7BqOZtVuumgHiy3Htpsipo/edit?slide=id.p1#slide=id.p1",
       icon: <PenTool className="w-6 h-6" />
     },
     {
       title: "WSL Remit Influencer Strategy",
-      description:
-        "Led the end-to-end development and execution of WSL Remit’s 6-week influencer marketing campaign targeting Nigerian expatriates and students in the UK. Strategically selected 6 UK-based influencers across Instagram, TikTok, Twitter, and YouTube to drive app installs and referral program participation. Crafted campaign messaging, influencer briefs, referral incentive structure (£2 per sign-up + £8 post-£500 transaction), and content cadence. Managed performance tracking across platforms, ensuring alignment with app acquisition KPIs and optimizing content for impact.",
       category: "Influencer Marketing",
       metrics: [
         { label: "Influencers Selected", value: "6" },
@@ -51,13 +45,11 @@ export default function Projects() {
       ],
       tags: ["Influencer Marketing", "Fintech", "Referral Program", "UK to Nigeria", "App Acquisition"],
       image: "/wslremit.png",
-      link: "#",
+      link: "/docs/WSLRemitInfluencerStrategy.pdf",
       icon: <Users className="w-6 h-6" />
     },
     {
       title: "AITI Digital Campaign Performance Report",
-      description:
-        "Conducted performance analysis for a digital lead generation campaign that acquired 35 new signups at a low $2 cost per lead. Led data collection and reporting on user behavior, highlighting that all conversions occurred via mobile. Delivered actionable insights on user demographics, interests, and city-level performance (Lagos and Abuja), which informed future content targeting and channel optimizations.",
       category: "Campaign Analytics",
       metrics: [
         { label: "New Signups", value: "35" },
@@ -66,13 +58,11 @@ export default function Projects() {
       ],
       tags: ["Campaign Reporting", "Lead Generation", "Data Analysis", "User Segmentation", "Performance Optimization"],
       image: "/aiti-campaign.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/15olXGv9SkUKs1Qe2wtNfrkazmHjN1e2XwmsFbKICuKw/edit",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
       title: "Access Bank Visa Campaign",
-      description:
-        "Executed an integrated digital campaign for Access Bank and Visa to promote card usage during the FIFA World Cup Qatar 2022. Campaign spanned social media, Google Display, and influencer activations, driving 6.5M reach, 59.8M impressions, and 368K video views. Key engagements included trivia contests, predictions, countdowns, trend activations (#AccessRoadToQatar), and real-time audience engagement across Facebook, Instagram, Twitter, and Google Display.",
       category: "Digital Marketing",
       metrics: [
         { label: "Total Reach", value: "6.5M" },
@@ -81,13 +71,11 @@ export default function Projects() {
       ],
       tags: ["Social Media Campaign", "Google Display", "Influencer Engagement", "Banking", "FIFA World Cup", "Omnichannel Activation"],
       image: "/access-visa.png",
-      link: "#",
+      link: "/docs/AccessVisaReport28thJuly-8thDecember.pdf",
       icon: <BarChart3 className="w-6 h-6" />
     },
     {
       title: "Morning Fresh Digital Strategy",
-      description:
-        "Led a full-scale digital transformation strategy repositioning Morning Fresh from a product-centric brand to a lifestyle experience. Developed multi-phase campaigns including 'AntiBac Relaunch (Beat the Germs)', 'Kitchen on a Roll (Wash-A-Thon)', 'Your Kitchen Chemistry (30th Anniversary)', and 'Everyday Sheroes'. Strategy involved influencer partnerships, UGC-driven content, live events, cross-channel activations, data-driven marketing, and always-on audience engagement across multiple consumer personas.",
       category: "Digital Transformation",
       metrics: [
         { label: "Campaign Duration", value: "12 Months" },
@@ -96,13 +84,11 @@ export default function Projects() {
       ],
       tags: ["Digital Transformation", "Brand Positioning", "Influencer Marketing", "FMCG", "Always-On Content", "Lifestyle Branding"],
       image: "/morning-fresh-presentation.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/17sleZ9EovfFhNDqQQ5mXg6AeyrVc__jCkz7UgsyT7R8/edit?slide=id.p1#slide=id.p1",
       icon: <Target className="w-6 h-6" />
     },
     {
       title: "Lafarge Sustainability Campaign",
-      description:
-        "Developed an integrated social media communication plan for Lafarge’s EcoPlanet Cement, aimed at educating consumers on decarbonization and promoting eco-friendly building materials. Crafted six strategic content pillars including 'Facts & Myths', 'Lafarge Legacy', and 'Go Green with Temi & Tayo'. Managed influencer strategy, identified key personas (artisans, homeowners, and project managers), and proposed interactive formats like polls, user-generated content, and reward-based recycling initiatives to enhance reach and engagement.",
       category: "Sustainability Marketing",
       metrics: [
         { label: "Target Reach Goal", value: "10M+" },
@@ -111,13 +97,11 @@ export default function Projects() {
       ],
       tags: ["Sustainability Strategy", "Influencer Partnerships", "Content Frameworks", "Behavior Change", "Green Marketing", "Digital Storytelling"],
       image: "/lafarage-communication.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/10HKPI207Z83AfJYlljfKd6K6ZPC8Zhoz5KeQSkj6RG4/edit?slide=id.g31883fba2dd_0_0#slide=id.g31883fba2dd_0_0",
       icon: <Globe className="w-6 h-6" />
     },
     {
       title: "Morning Fresh Integrated Digital Campaign",
-      description:
-        "Spearheaded October's digital campaign for Morning Fresh across Facebook, Instagram, and Twitter balancing brand storytelling with product promotion. Delivered 959K+ total reach, including a 532% overachievement on Facebook reach and 105% on impressions. Managed creative production (static, motion graphics, stories), community engagement, and crisis management while amplifying the Morning Fresh Sustainability event. Leveraged influencer content and customer sentiment to maintain 80% positive brand perception, despite increased complaints. Provided insights and monthly recommendations to refine paid media and content strategy.",
       category: "FMCG Marketing",
       metrics: [
         { label: "Total Reach", value: "959K" },
@@ -126,13 +110,11 @@ export default function Projects() {
       ],
       tags: ["Performance Marketing", "Community Management", "Sustainability", "FMCG", "Sentiment Analysis"],
       image: "/morning-fresh-report.png",
-      link: "#",
+      link: "/docs/MorningFreshOctoberMonthlyReport.pdf",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
       title: "Zest Africa Complete Brand Launch & Strategy",
-      description:
-        "Directed the strategic brand launch for Zest Africa positioning it as the go-to snack brand for Nigerian hustlers through the campaign 'You Can’t Hustle on Empty.' Developed a fully integrated GTM plan targeting young professionals across Lagos using digital platforms (Meta, TikTok, YouTube), influencer partnerships, UGC initiatives, and offline activations (roadshows, retail sampling, university takeovers). Oversaw the creation of content pillars ('Fuel Your Hustle', 'Snack & Banter') and media strategy, including Google Display, Snapchat, and experiential pop-ups, to build awareness, drive trial, and cultivate brand loyalty.",
       category: "Brand Launch & Strategy",
       metrics: [
         { label: "Digital Platforms", value: "6+" },
@@ -141,10 +123,29 @@ export default function Projects() {
       ],
       tags: ["Brand Strategy", "Youth Marketing", "Experiential", "Snack Industry", "Cultural Campaign"],
       image: "/zest-marketing.png",
-      link: "#",
+      link: "https://docs.google.com/presentation/d/1Fe5SDdtcU2e6T74JtBZuQOEGHd5tuJHHHRguwXFXJVQ/edit?usp=drivesdk",
       icon: <Rocket className="w-6 h-6" />
-    }
+    },
+    {
+      title: "Photography Portfolio",
+      category: "Photography",
+      metrics: [
+        { label: "Years Experience", value: "6+" },
+        { label: "Projects Completed", value: "100+" },
+        { label: "Client Satisfaction", value: "98%" },
+      ],
+      tags: ["Photography", "Brand Visuals", "Product Photography", "Creative Direction"],
+      image: "/photography.png",
+      link: "#",
+      icon: <Camera className="w-6 h-6" />,
+    },
   ]
+
+  const handleProjectClick = (link) => {
+    if (link && link !== "#") {
+      window.open(link, '_blank', 'noopener,noreferrer')
+    }
+  }
 
   return (
     <section ref={sectionRef} id="projects" className="relative w-full px-4 py-20 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
@@ -166,7 +167,7 @@ export default function Projects() {
 
         <div className="grid w-full gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000" style={{ transformStyle: "preserve-3d" }}>
+            <div key={index} className={`relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000 ${project.link !== "#" ? "cursor-pointer" : ""}`} style={{ transformStyle: "preserve-3d" }} onClick={() => handleProjectClick(project.link)}>
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(6)].map((_, i) => (
                   <motion.div key={i} className="absolute w-2 h-2 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%`, }} animate={{ y: [0, -20, 0], x: [0, Math.random() * 20 - 10, 0], opacity: [0, 1, 0], scale: [0, 1, 0], }} transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 2, ease: "easeInOut" }} />
@@ -184,22 +185,18 @@ export default function Projects() {
                   </motion.div>
                   {project.category}
                 </motion.div>
-                <motion.button className="absolute bottom-4 right-4 w-12 h-12 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-lg" initial={{ scale: 0, rotate: -180 }} whileHover={{ scale: 1, rotate: 0 }} transition={{ duration: 0.3, ease: "backOut" }} whileTap={{ scale: 0.9 }} >
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </motion.button>
+
+                {project.link !== "#" && (
+                  <motion.div className="absolute bottom-4 right-4 w-12 h-12 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-lg pointer-events-none" initial={{ scale: 0, rotate: -180 }} whileHover={{ scale: 1, rotate: 0 }} transition={{ duration: 0.3, ease: "backOut" }}>
+                    <ExternalLink className="w-5 h-5 text-white" />
+                  </motion.div>
+                )}
               </div>
 
               <div className="relative p-6">
                 <motion.h3 className="mb-3 text-xl font-bold transition-colors duration-300 text-[#121212] group-hover:text-[#9CAA7A]" initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: index * 0.1 + 0.6 }} whileHover={{ x: 5 }}>
                   {project.title}
                 </motion.h3>
-
-                <motion.p className="mb-4 leading-relaxed text-[#121212]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: index * 0.1 + 0.7 }}>
-                  {project.description}
-                </motion.p>
-
                 <motion.div className="grid grid-cols-3 gap-4 p-4 mb-4 rounded-xl bg-gradient-to-r from-[#E8EDD7] to-[#D9E0C4] text-[#9CAA7A] hover:from-[#CCD5AE] hover:to-[#B8C599]" initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: index * 0.1 + 0.8 }} whileHover={{ scale: 1.02 }}>
                   {project.metrics.map((metric, metricIndex) => (
                     <motion.div key={metricIndex} className="text-center" initial={{ scale: 0, rotateY: -90 }} animate={{ scale: 1, rotateY: 0 }} transition={{ delay: index * 0.1 + 0.9 + metricIndex * 0.1, type: "spring", stiffness: 200 }} whileHover={{ scale: 1.15, y: -5, transition: { duration: 0.2 } }} >
@@ -226,15 +223,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <motion.div className="mt-16 text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} viewport={{ once: true }}>
-          <motion.button className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
-            <motion.div className="absolute inset-0 bg-gradient-to-r from-[#9CAA7A] to-[#CCD5AE] opacity-0 group-hover:opacity-100 transition-opacity duration-300" initial={false} />
-            <span className="relative z-10">View All Projects</span>
-            <motion.div className="absolute right-4 top-1/2 transform -translate-y-1/2" animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-              →
-            </motion.div>
-          </motion.button>
-        </motion.div>
       </div>
     </section>
   )

@@ -11,33 +11,33 @@ const About = () => {
     setIsVisible(true)
   }, [])
 
-const skills = [
-  {
-    title: "Digital Marketing Expert",
-    description:
-      "Google Analytics & Ads certified with proven track record in SEM, Display, and Paid Social campaigns.",
-    icon: <BarChart3 size={24} />,
-    color: "from-[#9CAA7A] to-[#86956A]"
-  },
-  {
-    title: "Creative Photographer",
-    description: "Passionate photographer since 2018, capturing compelling visuals that enhance brand storytelling.",
-    icon: <Camera size={24} />,
-    color: "from-[#B8C599] to-[#9CAA7A]"
-  },
-  {
-    title: "Strategic Thinker",
-    description: "Developing data-driven campaigns that drive brand growth, user engagement, and customer loyalty.",
-    icon: <Target size={24} />,
-    color: "from-[#CCD5AE] to-[#B8C599]"
-  },
-  {
-    title: "Team Collaborator",
-    description: "Experienced in managing cross-functional teams and delivering high-impact marketing campaigns.",
-    icon: <Users size={24} />,
-    color: "from-[#A6B584] to-[#9CAA7A]"
-  }
-]
+  const skills = [
+    {
+      title: "Digital Marketing Expert",
+      description:
+        "Google Analytics & Ads certified with proven track record in SEM, Display, and Paid Social campaigns.",
+      icon: <BarChart3 size={24} />,
+      color: "from-[#9CAA7A] to-[#86956A]"
+    },
+    {
+      title: "Creative Photographer",
+      description: "Passionate photographer since 2018, capturing compelling visuals that enhance brand storytelling.",
+      icon: <Camera size={24} />,
+      color: "from-[#B8C599] to-[#9CAA7A]"
+    },
+    {
+      title: "Strategic Thinker",
+      description: "Developing data-driven campaigns that drive brand growth, user engagement, and customer loyalty.",
+      icon: <Target size={24} />,
+      color: "from-[#CCD5AE] to-[#B8C599]"
+    },
+    {
+      title: "Team Collaborator",
+      description: "Experienced in managing cross-functional teams and delivering high-impact marketing campaigns.",
+      icon: <Users size={24} />,
+      color: "from-[#A6B584] to-[#9CAA7A]"
+    }
+  ]
 
   return (
     <section id="about" className="w-full px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -50,18 +50,11 @@ const skills = [
           <motion.div className="flex flex-col items-center justify-center max-w-4xl" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
             <div className=" px-0 md:px-10 py-8 md:py-10 ">
               <p className="text-lg leading-relaxed text-[#121212] text-center mb-8">
-                I am a <span className="text-gradient font-semibold">Google Analytics & Ads Certified</span> Digital
-                Marketing Specialist with over 2 years of experience in strategy and execution across SEM, Display, Paid
-                Social, and other digital advertising platforms. I specialize in crafting data-driven campaigns that
-                drive brand growth, user engagement, and customer loyalty.
+                As a <span className="text-gradient font-semibold"> digital marketing specialist </span>  with over 2 years of experience in strategy and execution across SEM, display, paid social and other digital advertising platforms, I've collaborated and designed successful campaigns for brands in  cosmetics, fashion, and tech. My strength is in creating strategies that connect with the right audience, optimizing ads for better results, and managing budgets that deliver strong returns. I've driven engagement, boosted brand awareness, and achieved real results using platforms like <span className="text-gradient font-semibold">Google Ads, Meta Ads, LinkedIn Ads</span>, and more. I've also built online communities that people love and developed content strategies that work. My portfolio shows some of the successful campaigns I've led, proving my commitment to helping brands grow and achieve their goals.
                 <br />
                 <br />
-                My passion extends beyond marketing to <span className="text-gradient font-semibold">photography</span>,
-                where I've been capturing compelling visuals since 2018, and{" "}
-                <span className="text-gradient font-semibold">copywriting</span>, where I create narratives that
-                resonate with audiences and drive meaningful engagement.
+                My passion extends beyond marketing to <span className="text-gradient font-semibold">photography</span> where I've been capturing compelling visuals since 2018 and <span className="text-gradient font-semibold">football</span>. Whether it's running a full digital marketing strategy or building a community, I'm focused on delivering results.
               </p>
-
               <div className="flex justify-center">
                 <motion.a href="/resume.pdf" download="Qudus CV.pdf" className="inline-flex items-center gap-3 px-6 py-3 text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-lg creative-shadow hover:from-[#9CAA7A] hover:to-[#CCD5AE] transition-all duration-300" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                   <Download size={20} />
