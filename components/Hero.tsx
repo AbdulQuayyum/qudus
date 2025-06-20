@@ -79,13 +79,12 @@ const Hero = () => {
             </motion.span>
           </h1>
           <motion.p className="text-xl md:text-2xl text-[#121212] font-medium" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
-            Digital Marketing Specialist & Creative Professional
+            Digital strategist & Paid media
           </motion.p>
         </motion.div>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-[#121212]" >
-          Google Analytics & Ads Certified professional with 2+ years of experience in strategy, media buying, and
-          creative content creation. Passionate photographer and copywriter driving measurable results.
+          Are you struggling to reach the right audience or see results from your ads, I have built solid strategies that help businesses fix that so their brand(s) can grow.
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.7 }} className="grid max-w-2xl grid-cols-3 gap-6 mx-auto mb-10" >
           {[{ number: "641", label: "Leads Generated", icon: Target, color: "#CCD5AE" }, { number: "₦1.8K", label: "Avg Cost/Lead", icon: Zap, color: "#B8C599" }, { number: "10.7K", label: "Account Opens", icon: Sparkles, color: "#9CAA7A" }].map((stat, index) => {
