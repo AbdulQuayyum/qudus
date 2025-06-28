@@ -79,7 +79,7 @@ const Hero = () => {
             </motion.span>
           </h1>
           <motion.p className="text-xl md:text-2xl text-[#121212] font-medium" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
-            Digital strategist & Paid media
+            Digital strategy & Paid media
           </motion.p>
         </motion.div>
 
