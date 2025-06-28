@@ -167,7 +167,7 @@ export default function Projects() {
 
         <div className="grid w-full gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className={`relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000 ${project.link !== "#" ? "cursor-pointer" : ""}`} style={{ transformStyle: "preserve-3d" }} onClick={() => handleProjectClick(project.link)}>
+            <div key={index} className={`relative overflow-hidden transition-all duration-500 bg-white rounded-2xl shadow-lg hover:shadow-2xl group perspective-1000 ${project.link !== "#" ? "cursor-pointer" : ""}`} style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(6)].map((_, i) => (
                   <motion.div key={i} className="absolute w-2 h-2 bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%`, }} animate={{ y: [0, -20, 0], x: [0, Math.random() * 20 - 10, 0], opacity: [0, 1, 0], scale: [0, 1, 0], }} transition={{ duration: 3 + Math.random() * 2, repeat: Infinity, delay: Math.random() * 2, ease: "easeInOut" }} />
