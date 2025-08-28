@@ -115,7 +115,7 @@ const Hero = () => {
             Let's Work Together
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </motion.a>
-          <motion.a href="/resume.pdf" download="Qudus CV.pdf" className="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-[#9CAA7A] bg-transparent border-[#9CAA7A] border rounded-full creative-shadoW transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2, boxShadow: "0 20px 40px rgba(156, 170, 122, 0.4)" }} whileTap={{ scale: 0.95 }} >
+          <motion.a href="/resume.pdf" download="Omotunde-Young Qudus Content Marketer & SEO specialist.pdf" className="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-[#9CAA7A] bg-transparent border-[#9CAA7A] border rounded-full creative-shadoW transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2, boxShadow: "0 20px 40px rgba(156, 170, 122, 0.4)" }} whileTap={{ scale: 0.95 }} >
             <motion.span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10" initial={{ x: "-100%" }} whileHover={{ x: "100%" }} transition={{ duration: 0.6 }} />
             Download My CV
             <FileText className="w-5 h-5 group-hover:translate-x-1 transition-transform text-[#9CAA7A] duration-300" />
