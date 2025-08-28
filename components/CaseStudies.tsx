@@ -584,6 +584,61 @@ const CaseStudies = () => {
                 }
             ],
             videos: []
+        },
+        {
+            id: 48,
+            name: "KLEEN UP",
+            audienceEngagement: [],
+
+            analytics: [
+                {
+                    id: 51,
+                    url: "/works/kleenup/analytics/01.jpg",
+                    title: "KLEEN UP Instagram Reels, Stories, Post and Live Videos Insights"
+                },
+                {
+                    id: 52,
+                    url: "/works/kleenup/analytics/02.jpg",
+                    title: "KLEEN UP Instagram AD Overview Insights 01"
+                },
+                {
+                    id: 53,
+                    url: "/works/kleenup/analytics/03.jpg",
+                    title: "KLEEN UP Instagram AD Overview Insights 02"
+                },
+                {
+                    id: 54,
+                    url: "/works/kleenup/analytics/04.jpg",
+                    title: "KLEEN UP Instagram Post Insights"
+                },
+                {
+                    id: 55,
+                    url: "/works/kleenup/analytics/05.jpg",
+                    title: "KLEEN UP Instagram Professional Dashboard Insights"
+                },
+                {
+                    id: 56,
+                    url: "/works/kleenup/analytics/06.jpg",
+                    title: "KLEEN UP Instagram Posts Views"
+                },
+                {
+                    id: 58,
+                    url: "/works/kleenup/analytics/08.jpg",
+                    title: "KLEEN UP Instagram AD Overview 3 Apr - 1 Jul Insights"
+                },
+            ],
+            videos: [
+                {
+                    id: 50,
+                    url: "/works/kleenup/videos/01.mp4",
+                    title: "KLEEN UP Product Showcasing Video"
+                },
+                {
+                    id: 49,
+                    url: "/works/kleenup/videos/02.mp4",
+                    title: "KLEEN UP Product Promo Video"
+                }
+            ]
         }
     ];
 
