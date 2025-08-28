@@ -28,8 +28,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "ooreeoluwa@gmail.com",
-      href: "mailto:ooreeoluwa@gmail.com",
+      value: "helloiamqudus@gmail.com",
+      href: "mailto:helloiamqudus@gmail.com",
     },
     {
       icon: Phone,
@@ -61,7 +61,7 @@ export default function Contact() {
       `Best regards,\n${formData.firstName} ${formData.lastName}`,
     )
 
-    const mailtoUrl = `mailto:ooreeoluwa@gmail.com?subject=${subject}&body=${body}`
+    const mailtoUrl = `mailto:helloiamqudus@gmail.com?subject=${subject}&body=${body}`
 
     try {
       window.location.href = mailtoUrl
