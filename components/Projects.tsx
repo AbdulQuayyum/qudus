@@ -87,19 +87,19 @@ export default function Projects() {
       link: "https://docs.google.com/presentation/d/17sleZ9EovfFhNDqQQ5mXg6AeyrVc__jCkz7UgsyT7R8/edit?slide=id.p1#slide=id.p1",
       icon: <Target className="w-6 h-6" />
     },
-    {
-      title: "Lafarge Sustainability Campaign",
-      category: "Sustainability Marketing",
-      metrics: [
-        { label: "Target Reach Goal", value: "10M+" },
-        { label: "Campaign Duration", value: "6 Months" },
-        { label: "Content Pillars", value: "6+" }
-      ],
-      tags: ["Sustainability Strategy", "Influencer Partnerships", "Content Frameworks", "Behavior Change", "Green Marketing", "Digital Storytelling"],
-      image: "/lafarage-communication.png",
-      link: "https://docs.google.com/presentation/d/10HKPI207Z83AfJYlljfKd6K6ZPC8Zhoz5KeQSkj6RG4/edit?slide=id.g31883fba2dd_0_0#slide=id.g31883fba2dd_0_0",
-      icon: <Globe className="w-6 h-6" />
-    },
+    // {
+    //   title: "Lafarge Sustainability Campaign",
+    //   category: "Sustainability Marketing",
+    //   metrics: [
+    //     { label: "Target Reach Goal", value: "10M+" },
+    //     { label: "Campaign Duration", value: "6 Months" },
+    //     { label: "Content Pillars", value: "6+" }
+    //   ],
+    //   tags: ["Sustainability Strategy", "Influencer Partnerships", "Content Frameworks", "Behavior Change", "Green Marketing", "Digital Storytelling"],
+    //   image: "/lafarage-communication.png",
+    //   link: "https://docs.google.com/presentation/d/10HKPI207Z83AfJYlljfKd6K6ZPC8Zhoz5KeQSkj6RG4/edit?slide=id.g31883fba2dd_0_0#slide=id.g31883fba2dd_0_0",
+    //   icon: <Globe className="w-6 h-6" />
+    // },
     {
       title: "Morning Fresh Integrated Digital Campaign",
       category: "FMCG Marketing",
@@ -113,19 +113,19 @@ export default function Projects() {
       link: "/docs/MorningFreshOctoberMonthlyReport.pdf",
       icon: <TrendingUp className="w-6 h-6" />
     },
-    {
-      title: "Zest Africa Complete Brand Launch & Strategy",
-      category: "Brand Launch & Strategy",
-      metrics: [
-        { label: "Digital Platforms", value: "6+" },
-        { label: "Target Audience", value: "28M+ Users" },
-        { label: "Content Pillars", value: "6" }
-      ],
-      tags: ["Brand Strategy", "Youth Marketing", "Experiential", "Snack Industry", "Cultural Campaign"],
-      image: "/zest-marketing.png",
-      link: "https://docs.google.com/presentation/d/1Fe5SDdtcU2e6T74JtBZuQOEGHd5tuJHHHRguwXFXJVQ/edit?usp=drivesdk",
-      icon: <Rocket className="w-6 h-6" />
-    },
+    // {
+    //   title: "Zest Africa Complete Brand Launch & Strategy",
+    //   category: "Brand Launch & Strategy",
+    //   metrics: [
+    //     { label: "Digital Platforms", value: "6+" },
+    //     { label: "Target Audience", value: "28M+ Users" },
+    //     { label: "Content Pillars", value: "6" }
+    //   ],
+    //   tags: ["Brand Strategy", "Youth Marketing", "Experiential", "Snack Industry", "Cultural Campaign"],
+    //   image: "/zest-marketing.png",
+    //   link: "https://docs.google.com/presentation/d/1Fe5SDdtcU2e6T74JtBZuQOEGHd5tuJHHHRguwXFXJVQ/edit?usp=drivesdk",
+    //   icon: <Rocket className="w-6 h-6" />
+    // },
     {
       title: "Photography Portfolio",
       category: "Photography",
@@ -141,7 +141,7 @@ export default function Projects() {
     },
   ]
 
-  const handleProjectClick = (link) => {
+  const handleProjectClick = (link: any) => {
     if (link && link !== "#") {
       window.open(link, '_blank', 'noopener,noreferrer')
     }
@@ -180,9 +180,9 @@ export default function Projects() {
                 <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12" initial={{ x: "-100%" }} whileHover={{ x: "200%" }} transition={{ duration: 0.8, ease: "easeOut" }} />
 
                 <motion.div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-white/90 text-[#9CAA7A] backdrop-blur-sm" initial={{ x: -50, opacity: 0, scale: 0 }} animate={{ x: 0, opacity: 1, scale: 1 }} transition={{ delay: index * 0.1 + 0.5, type: "spring", stiffness: 200, damping: 10 }} whileHover={{ scale: 1.1, rotate: 5 }} >
-                  <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}>
+                  {/* <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}>
                     {project.icon}
-                  </motion.div>
+                  </motion.div> */}
                   {project.category}
                 </motion.div>
 

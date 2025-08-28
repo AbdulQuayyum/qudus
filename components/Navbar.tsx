@@ -25,8 +25,8 @@ const Navbar = () => {
   ]
 
   return (
-    <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "backdrop-blur-md shadow-lg bg-white/95" : "bg-white/80 backdrop-blur-sm"}`} >
-      <div className="w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} className={`fixed top-4 left-0 right-0 z-50 `} >
+      <div className={`w-full px-4 mx-auto max-w-4xl rounded-full sm:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "backdrop-blur-md shadow-lg bg-white/95" : "bg-white/80 backdrop-blur-sm"}`}>
         <div className="flex items-center justify-between h-16">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} className="text-2xl font-bold text-gradient" >
             Qudus

@@ -1,5 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
-import { About, BackToTop, Contact, Education, Footer, Hero, Navbar, Projects, Qualification, Services, Skills } from "../components/Index"
+import { About, BackToTop, Contact, CaseStudies, Education, Footer, Hero, Navbar, Projects, Qualification, Services, Skills } from "../components/Index"
 
 const App = () => {
   return (
@@ -7,10 +7,11 @@ const App = () => {
       <header>
         <Navbar />
       </header>
-      <main className="flex flex-col gap-y-10 overflow-hidden">
+      <main className="flex flex-col gap-y-10 pt-12 overflow-hidden">
         <Hero />
-        <About />
-        <Services />
+        {/* <About /> */}
+        {/* <Services /> */}
+        <CaseStudies />
         <Qualification />
         <Skills />
         <Projects />

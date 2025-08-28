@@ -64,7 +64,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.7 }}>
+          {/* <motion.div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.7 }}>
             {skills.map((skill, index) => (
               <motion.div key={index} className="creative-card p-6 rounded-xl creative-shadow floating-gentle" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.9 + index * 0.1 }} whileHover={{ y: -5, scale: 1.02 }} style={{ animationDelay: `${index * 0.5}s` }} >
                 <motion.div className={`flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-gradient-to-r ${skill.color} creative-shadow`} whileHover={{ scale: 1.1, rotate: 5 }}>
@@ -75,7 +75,7 @@ const About = () => {
                 <p className="text-sm leading-relaxed text-gray-600">{skill.description}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

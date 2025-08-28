@@ -1,5 +1,6 @@
 export { default as About } from "./About"
 export { default as BackToTop } from "./BackToTop"
+export { default as CaseStudies } from "./CaseStudies"
 export { default as Contact } from "./Contact"
 export { default as Education } from "./Education"
 export { default as Footer } from "./Footer"

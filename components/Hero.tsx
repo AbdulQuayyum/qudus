@@ -1,5 +1,5 @@
 "use client"
-import { ArrowRight, Camera, BarChart3, Target, Zap, TrendingUp, Globe, PieChart, Megaphone, MousePointer, Palette, Image, Aperture, PenTool, Edit3, FileText, Lightbulb, Compass, ShoppingCart, CreditCard, DollarSign, Smartphone, Monitor, Wifi, Award, Star, Sparkles } from "lucide-react"
+import { ArrowRight, Camera, BarChart3, Target, Zap, TrendingUp, Globe, PieChart, Megaphone, MousePointer, Palette, Image, Aperture, PenTool, Edit3, FileText, Lightbulb, Compass, ShoppingCart, CreditCard, DollarSign, Smartphone, Monitor, Wifi, Award, Star, Sparkles, File } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 
@@ -79,18 +79,18 @@ const Hero = () => {
             </motion.span>
           </h1>
           <motion.p className="text-xl md:text-2xl text-[#121212] font-medium" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
-            Digital strategy & Paid media
+            Marketing Strategist
           </motion.p>
         </motion.div>
 
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-[#121212]" >
-          Are you struggling to reach the right audience or see results from your ads, I have built solid strategies that help businesses fix that so their brand(s) can grow.
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="max-w-3xl mx-auto mb-8 text-lg text-center leading-relaxed text-[#121212]" >
+          I am a creative content and marketing strategist with a passion for developing and executing innovative campaigns that drive brand growth, audience engagement, and measurable business impact. I have proven expertise in content strategy and development, SEO, Performance Marketing, Research, brand and digital campaign strategy. Adept at leveraging data-driven insights to optimize marketing efforts, enhance brand visibility, and boost ROI.
         </motion.p>
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.7 }} className="grid max-w-2xl grid-cols-3 gap-6 mx-auto mb-10" >
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.7 }} className="grid max-w-2xl grid-cols-2 sm:grid-cols-3 gap-6 mx-auto mb-10" >
           {[{ number: "641", label: "Leads Generated", icon: Target, color: "#CCD5AE" }, { number: "₦1.8K", label: "Avg Cost/Lead", icon: Zap, color: "#B8C599" }, { number: "10.7K", label: "Account Opens", icon: Sparkles, color: "#9CAA7A" }].map((stat, index) => {
             const IconComponent = stat.icon
             return (
-              <motion.div key={index} initial={{ opacity: 0, y: 50, rotateX: -90 }} animate={{ opacity: 1, y: 0, rotateX: 0 }} transition={{ duration: 0.8, delay: 1 + index * 0.2, type: "spring", stiffness: 100 }} whileHover={{ scale: 1.1, y: -8, rotateY: 10, boxShadow: `0 20px 40px rgba(156, 170, 122, 0.3)` }} className="creative-card p-6 rounded-2xl text-center creative-shadow bg-white/80 backdrop-blur-sm border border-white/20 relative overflow-hidden group" >
+              <motion.div key={index} initial={{ opacity: 0, y: 50, rotateX: -90 }} animate={{ opacity: 1, y: 0, rotateX: 0 }} transition={{ duration: 0.8, delay: 1 + index * 0.2, type: "spring", stiffness: 100 }} whileHover={{ scale: 1.1, y: -8, rotateY: 10, boxShadow: `0 20px 40px rgba(156, 170, 122, 0.3)` }} className={`creative-card p-6 rounded-2xl text-center creative-shadow bg-white/80 backdrop-blur-sm border border-white/20 relative overflow-hidden group ${stat.label === "Account Opens" && "sm:col-span-1 col-span-2"}`} >
                 <motion.div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#9CAA7A]/5" initial={{ scale: 0, opacity: 0 }} whileHover={{ scale: 1, opacity: 1 }} transition={{ duration: 0.3 }} />
                 <motion.div className="absolute inset-0 pointer-events-none" initial={{ opacity: 0 }} whileHover={{ opacity: 1 }} transition={{ duration: 0.3 }} >
                   {[...Array(5)].map((_, i) => (
@@ -109,11 +109,16 @@ const Hero = () => {
             )
           })}
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9 }} >
+        <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9 }} >
           <motion.a href="#contact" className="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#CCD5AE] to-[#9CAA7A] rounded-full creative-shadow hover:from-[#9CAA7A] hover:to-[#CCD5AE] transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2, boxShadow: "0 20px 40px rgba(156, 170, 122, 0.4)" }} whileTap={{ scale: 0.95 }} >
             <motion.span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10" initial={{ x: "-100%" }} whileHover={{ x: "100%" }} transition={{ duration: 0.6 }} />
             Let's Work Together
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </motion.a>
+          <motion.a href="/resume.pdf" download="Qudus CV.pdf" className="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-[#9CAA7A] bg-transparent border-[#9CAA7A] border rounded-full creative-shadoW transition-all duration-300 relative overflow-hidden group" whileHover={{ scale: 1.05, y: -2, boxShadow: "0 20px 40px rgba(156, 170, 122, 0.4)" }} whileTap={{ scale: 0.95 }} >
+            <motion.span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10" initial={{ x: "-100%" }} whileHover={{ x: "100%" }} transition={{ duration: 0.6 }} />
+            Download My CV
+            <FileText className="w-5 h-5 group-hover:translate-x-1 transition-transform text-[#9CAA7A] duration-300" />
           </motion.a>
         </motion.div>
       </div>
