@@ -16,8 +16,8 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { href: "#about", label: "About" },
-    { href: "#services", label: "Services" },
+    { href: "#hero", label: "About" },
+    { href: "#casestudies", label: "Case Studies" },
     { href: "#qualifications", label: "Experience" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Portfolio" },

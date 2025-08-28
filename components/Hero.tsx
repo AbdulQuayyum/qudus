@@ -44,7 +44,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative flex flex-col items-center justify-center w-full px-4 py-20 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8 min-h-screen">
+    <section id="hero"  className="relative flex flex-col items-center justify-center w-full px-4 py-20 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8 min-h-screen">
       <motion.div className="absolute inset-0 opacity-10" animate={{ background: ["radial-gradient(circle at 20% 80%, #CCD5AE 0%, transparent 50%)", "radial-gradient(circle at 80% 20%, #B8C599 0%, transparent 50%)", "radial-gradient(circle at 40% 40%, #9CAA7A 0%, transparent 50%)", "radial-gradient(circle at 20% 80%, #CCD5AE 0%, transparent 50%)"] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} />
       {floatingIcons.map((item, index) => (
         <motion.div key={index} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: [0, 0.4, 0], scale: [0, 1, 0], x: [0, item.x, 0], y: [0, item.y, 0], rotate: [0, 360, 0] }} transition={{ duration: 10, delay: item.delay, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", ease: "easeInOut" }} className="absolute text-[#9CAA7A]" style={{ left: item.startX, top: item.startY, transform: "translate(-50%, -50%)" }} >

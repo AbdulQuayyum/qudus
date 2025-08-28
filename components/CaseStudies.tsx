@@ -722,7 +722,7 @@ const CaseStudies = () => {
 
     return (
         <>
-            <div className="">
+            <section id="casestudies"  className="">
                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden mx-auto">
                     <div className="flex flex-col items-center justify-center gap-y-3 mb-12">
                         <motion.span className="text-xl text-center font-bold md:text-3xl bg-gradient-to-r from-[#A8B5A2] to-[#7A8A6F] bg-clip-text text-transparent" initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} >
@@ -749,7 +749,7 @@ const CaseStudies = () => {
                         </motion.div>
                     ))}
                 </motion.div>
-            </div>
+            </section>
 
             <ImageModal selectedImage={selectedImage} imageZoom={imageZoom} zoomIn={zoomIn} zoomOut={zoomOut} closeImageModal={closeImageModal} downloadMedia={downloadMedia} shareMedia={shareMedia} />
 
