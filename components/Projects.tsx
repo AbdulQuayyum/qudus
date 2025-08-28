@@ -136,7 +136,7 @@ export default function Projects() {
       ],
       tags: ["Photography", "Brand Visuals", "Product Photography", "Creative Direction"],
       image: "/photography.png",
-      link: "#",
+      link: "https://drive.google.com/drive/folders/1-CTzwe6oHzDVxMJda2EfdAJAVTA7FakF",
       icon: <Camera className="w-6 h-6" />,
     },
   ]
